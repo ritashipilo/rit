@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Добавление товара</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet"
+     href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/login">Авторизация</a>
+        <a href="/">Home</a>
+    <a href = '/catalog'>Catalog</a>
+    <a href ='/add'>Добавить товар</a>
+    </nav>
+    <h1>Добавление товара</h1>
+    <from action="/add" method ='post'>
+        <label>Название</label>
+        <input type="text"
+        name="name"
+        placeholder="Введите Название"
+        required>
+        <button type="submit">
+        Добавить товар
+        </button>
+        
+    </from>
+</body>
+</html>
